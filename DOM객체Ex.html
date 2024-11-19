@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM객체Ex</title>
+</head>
+<body>
+  <div class="container">
+    <!-- https://placehold.co/1000x600/9B7EBD/fff?text=PJ4 -->
+    <img src="" alt="img1" class="pic">
+    <img src="" alt="img1" class="pic">
+    <img src="" alt="img1" class="pic">
+    <img src="" alt="img1" class="pic">
+  </div>
+
+  <script>
+      const imgs = [
+        ' https://placehold.co/200x200/9B7EBD/fff?text=PJ4',
+        ' https://placehold.co/200x200/9B7EBD/fff?text=PJ4',
+        ' https://placehold.co/200x200/9B7EBD/fff?text=PJ4',
+        ' https://placehold.co/200x200/9B7EBD/fff?text=PJ4'
+
+      ];
+  
+   const pics = document.querySelectorAll('.pic');
+   pics.forEach( (pic,idx) => {
+    pic.src = imgs[idx];
+   });
+
+  </script>
+</body>
+</html>
